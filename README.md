@@ -86,10 +86,11 @@ Para esta etapa, primero definimos la _paleta de colores_ y el tipo de _tipograf
 
 Una vez definido los colores y tipografía, empleamos la herramienta *Figma*, el cual nos permitió diseñar el prototipo que representa nuestro _ideal_ de solución y que sigue con los fundamentos de _visual design_. En este sentido, el prototipo para los diversos formatos son los que se muestran más adelante. 
 
+Prototipo para Móviles:
 ![FigmaMobile](http://www.imagenonline.com/imagenes/1/1377-8a180f8827fca9aac07db535911bb077b38e6c10.jpg)
 
-
-![FigmaLaptop]()
+Prototipo para laptos:
+![FigmaLaptop](http://www.imagenonline.com/imagenes/2/1509-95e5b304b9323620214a1c06824859b8bf8f2cde.jpg)
 
 
 #### Testeos de usabilidad
@@ -114,6 +115,7 @@ En resumen, los *problemas detectados* durante el testeo fueron:
   - Por tratarse de una serie muy de humor irreverente, les gustaría contar con alguna "animación", es decir, escuchar sonido y ver movimiento acorde a la irreverencia.
   - Los usuarios avanzados, quieren conocer y manipular (filtrar y ordenar) más características de los personajes, y no solamente las básicas que consideramos.
   - Los usuarios avanzados les gustaría ver las características mencionadas en el punto anterior, de forma "interactiva", es decir, que una vez seleccionada la imagen o tarjeta de algún personaje, esta se dé vuelta y muestre la información, sin tener que ir a abrir o buscar una nueva página en la aplicación.
+  - En cuanto a los porcentajes o cálculos a ofrecer, les gustaría ver en una línea, algo sencillo (no muy llamativo) y que pudiese ofrecer la opción de elegir por género y especie, y mejor por ambos. 
 
  
 ## **3. Implementación de la Interfaz de Usuario (HTML/CSS/JS)**
@@ -131,38 +133,15 @@ Es así como, la *aplicación ofrece:*
 
 
 El resultado (PrtScr) de la aplicación es la que se muestra a continuación:
-![Imagen PrtScr de la aplicacion](http://www.imagenonline.com/imagenes/1/1374-93cb85f94a23853752dce4930f64cd63c9dfe58a.jpg)   
+![Imagen PrtScr de la aplicacion](http://www.imagenonline.com/imagenes/2/1529-a0be90c395697a7243ae12937e2c31323370c52b.jpg)   
 
 
 ## **4. Pruebas unitarias**
-OJO OJO OJO
-El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
-que escribas tu propias pruebas unitarias para las funciones encargadas de
-_procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-Para ello te recomendamos implementar las siguientes funciones en el archivo
-`src/data.js`:
 
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+Implementamos algunas pruebas siguiendo las recomendaciones indicadas en el proyecto original, sin embargo éstas no nos resultaron exitosas a pesar de los esfuerzos realizados, por lo que nos comprometimos a revisar este punto más a fondo para solventarlo más adelante.  
 
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estas son ideas de funciones que podrías implementar, pero esto depende de tu
-propia implementación.
-
-El archivo `src/data.js` tiene que tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_).
+![PrtScr-funciones npm](http://www.imagenonline.com/imagenes/2/1527-a418c3f425180c5b4c8c38146e9c71ea14f8712a.png)
+![PrtScr-npm test](http://www.imagenonline.com/imagenes/2/1528-4bc2ee99831b878992eaf3f30a7506acc42a643d.jpg)
 
 
 ## **5. Heurísticas de usabilidad**
@@ -178,6 +157,7 @@ Resultado del Test Heurística de Usabilidad de la aplicación:
 ¡Gracias por su atención!
 _Las Desarrolladoras_
 C. Leal y A. Valera
+Julio 2019
 
 
 
