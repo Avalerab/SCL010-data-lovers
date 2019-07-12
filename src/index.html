@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>DL-Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width", user-escalable="no", initial-scale="1.0", maximun-scale="1.0", minimun-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
   
   <body>
     <div id="RICKANDMORTY" class="container">
        
       <header class="header">
-        <img class ="logo" src="http://www.imagenonline.com/imagenes/1/1164-746f68750ce566d4bb1bf593e0bc37549bb3ad81.png" style="max-width:auto;height:auto;">
+        <img class ="logo" src="http://www.imagenonline.com/imagenes/1/1164-746f68750ce566d4bb1bf593e0bc37549bb3ad81.png" alt="Logo-serie">
         <div class="texto-principal">
         <h2>Conoce a los personajes favoritos de la serie</h2> 
         </div>
@@ -46,20 +47,23 @@
             <option value="Parasite">Parásito</option>
           </select>
 
-          <button name="calculos" id="calculations" class="filters">
-          <option value="calculo">Cálculos</option>
-          </button>
+        <!-- <Boton "Calculos" para dar informacion sobre los % mostrados>-->
+        <FORM>
+          <input name="calculos" type="button" value="Cálculo" class="filters" 
+          onclick='alert("Hola, los porcentajes (%) mostrados corresponden a metricas de los personajes de la serie, por género, especie y por ambos inclusive. Ejemplo: Si quieres conocer el porcentaje de personajes con las características de género Humano (Human) y especie Alien, entonces los seleccionamos y el resultado debería ser un 17%")' />
+        </FORM>
+            
+                
   
 
         </nav>
       </header>
       <div id="stats" class="row"></div>
-      <section class="section">
+      <section class="sectionA">
         <!--Aca se colocaran las 6 tarjetas con los personajes principales: Rick, Morty, Squanchy, Summer, Beth y Jerry-->
         <div class="items">
           <div id="result" class="tarjetas"></div>
           
-          <!-- <div id="resultsOrden"></div> -->
           <!--Con "navegation" pretendemos crear varias paginas para que se vean todas las tarjetas de los personajes-->
           <nav class="navegation"></nav>
         </div>   
@@ -70,7 +74,7 @@
           <img src="./../multimedia/giphy.gif" alt="Gif">
           <h4>¡Bienvenidos!</h4>
           <h4>Ya puedes conocer más detalles de los personajes de tu serie favorita,</h4>
-          <h4>y hasta ordenarlos alfabéticamente por el nombre (A-Z/Z-A), por el género</h4>
+          <h4>y hasta ordenarlos alfabéticamente por el nombre (A-Z y Z-A), por el género</h4>
           <h4>y por su especie, así que .... a disfrutar!!!</h4>
           <audio src="./../multimedia/Rick-and-Morty-Theme-Song.mp3" preload="none"></audio>
           <audio controls class="control">
@@ -80,7 +84,7 @@
                   <object type="application/x-shockwave-flash" data="player.swf?miArchivo=Rick-and-Morty-Theme-Song.mp3">
                       <param name="movie" value="player.swf?miArchivo=Rick-and-Morty-Theme-Song.mp3">
                   </object>
-          </audio controls>
+          </audio>
           </div>
         </aside>
         
