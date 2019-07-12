@@ -1,4 +1,3 @@
-// Manejo del DOM
 const resultsNode = document.getElementById("result");
 const statsNode   = document.getElementById("stats");
 const rymData = window.RICKANDMORTY.results;

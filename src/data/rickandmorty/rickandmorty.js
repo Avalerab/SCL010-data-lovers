@@ -9375,4 +9375,8 @@ const RICKANDMORTY = {
     "created": "2018-05-22T17:51:07.373Z"
   }]
 }
+<<<<<<< HEAD
 window.RICKANDMORTY = RICKANDMORTY;
+=======
+window.RICKANDMORTY=RICKANDMORTY;
+>>>>>>> 40ca6107dad80efd2d84fdda3ccd5787806f9c4f
